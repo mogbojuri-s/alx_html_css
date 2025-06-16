@@ -1,0 +1,34 @@
+/* Flexbox layout for portfolio pages */
+
+/* 1. Make body a flex container in column direction */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* 2. Make main a flex container in row direction */
+main {
+  display: flex;
+  flex-direction: row;
+  flex: auto;
+  min-height: 400px; /* Optional: ensures visible area for demo */
+}
+
+/* 3. Article takes 2/3, aside takes 1/3 */
+main > article {
+  flex: 2;
+  overflow-y: auto;
+  min-width: 0; /* Prevents overflow issues */
+}
+
+main > aside {
+  flex: 1;
+  overflow-y: auto;
+  min-width: 0;
+}
+
+/* Optional: Make sure header and footer don't shrink */
+header, footer {
+  flex-shrink: 0;
+}
