@@ -326,3 +326,47 @@ button:hover {
   font-size: 0.95rem;
   line-height: 1.6;
 }
+footer {
+  background-color: #071629;
+  color: white;
+  padding: 60px 20px 30px;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-logo {
+  height: 40px;
+}
+
+.footer-nav {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  padding: 0;
+  margin: 20px 0 0;
+}
+
+.footer-nav li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.footer-nav li a:hover {
+  color: #C271FF;
+}
+
+footer p {
+  margin-top: 30px;
+  font-size: 0.9rem;
+  color: #ccc;
+}
