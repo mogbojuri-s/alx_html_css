@@ -346,23 +346,23 @@ footer {
   height: 40px;
 }
 
-.footer-nav {
+/* Footer icons (replacing nav links) */
+.footer-icons {
   list-style: none;
   display: flex;
-  gap: 30px;
+  gap: 20px;
   padding: 0;
   margin: 20px 0 0;
 }
 
-.footer-nav li a {
-  color: white;
-  text-decoration: none;
-  font-weight: 500;
-  transition: color 0.3s ease;
+.footer-icons li img {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s ease;
 }
 
-.footer-nav li a:hover {
-  color: #C271FF;
+.footer-icons li img:hover {
+  transform: scale(1.1);
 }
 
 footer p {
