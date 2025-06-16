@@ -158,3 +158,90 @@ button:hover {
   font-style: italic;
   color: #eee;
 }
+/* ========== VIDEOS SECTION ========== */
+.videos {
+  padding: 60px 20px;
+  background-color: white;
+  color: #071629;
+  text-align: center;
+}
+
+.videos h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.video-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.video-card {
+  width: 250px;
+  text-align: left;
+}
+
+.thumbnail {
+  position: relative;
+  width: 100%;
+  height: 140px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.thumbnail .play {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.video-card h3 {
+  font-size: 1.1rem;
+  margin: 10px 0 5px;
+}
+
+.video-card p {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.author img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.author span {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #C271FF;
+}
+
+.meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  color: #C271FF;
+}
+
+.stars {
+  color: #C271FF;
+}
