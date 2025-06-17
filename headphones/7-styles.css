@@ -1,0 +1,343 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Variables */
+:root {
+  --primary-color: #FF6565;
+  --white: #ffffff;
+  --dark-bg: #1c1c1c;
+  --light-text: #f2f2f2;
+  --max-width: 1000px;
+}
+
+/* Body styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--dark-bg);
+  color: var(--light-text);
+}
+
+/* Header / Hero section */
+.hero {
+  background-image: url("images/images/headphones_hero_1.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 60px 20px;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* Navbar */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 40px;
+}
+
+.menu a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: var(--white);
+  transition: color 0.3s;
+}
+
+.menu a:hover,
+.menu a:active {
+  color: var(--primary-color);
+}
+
+/* Hero Content */
+.hero-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.hero-content button {
+  padding: 15px 30px;
+  background-color: var(--primary-color);
+  border: none;
+  color: var(--white);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+.hero-content button:hover,
+.hero-content button:active {
+  opacity: 0.9;
+}
+
+@media screen and (max-width: 480px) {
+  .nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-content h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .hero-content button {
+    width: 100%;
+  }
+}
+.what-we-do {
+    max-width: 1000px;
+    margin: 80px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.activities {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+     color:#333;
+}
+@keyframes bounceIn {
+  0% { transform: scale(0.8); opacity: 0; }
+  60% { transform: scale(1.1); opacity: 1; }
+  100% { transform: scale(1); }
+}
+.activities .activity {
+  animation: bounceIn 0.6s ease-out forwards;
+}
+
+.activity {
+    flex: 1;
+    min-width: 280px;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.activity:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+.activity span {
+    font-size: 40px;
+    color: #FF6565;
+    display: block;
+    margin-bottom: 10px;
+}
+.our-results {
+    text-align: center;
+    max-width: 1000px;
+    margin: 80px auto;
+    padding: 0 20px;
+}
+
+.our-results h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.our-results p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+.results-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.result {
+    flex: 1;
+    min-width: 200px;
+    padding: 20px;
+    background: #f2f2f2;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.result {
+  transition: transform 0.3s ease;
+}
+.result:hover {
+  transform: translateY(-10px) rotate(-1deg);
+}
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.results-container .result {
+  animation: fadeInUp 0.5s ease-in forwards;
+}
+
+.result h3 {
+    font-size: 28px;
+    color: #FF6565;
+    margin-bottom: 10px;
+}
+
+.result p {
+    font-size: 16px;
+    color: #333;
+}
+.contact-us {
+  background-color: #f9f9f9;
+  padding: 60px 20px;
+  text-align: center;
+  color:#333;
+}
+
+.contact-us h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color:#111;
+}
+
+.contact-us p {
+  margin-bottom: 30px;
+  color:#555;
+}
+
+.contact-form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.contact-form button {
+  background-color: #ff6565;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: opacity 0.3s ease;
+}
+
+.contact-form button:hover {
+  opacity: 0.9;
+}
+.site-footer {
+  background-color: #000;
+  color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.footer-logo {
+  width: 160px;
+  margin-bottom: 20px;
+}
+
+.social-icons {
+  margin: 20px 0;
+}
+
+.social-icons a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 24px;
+  margin: 0 10px;
+}
+
+.social-icons a:hover {
+  color: #FF6565; /* hover effect */
+}
+
+.site-footer p {
+  font-size: 14px;
+  margin-top: 10px;
+}
+@media screen and (max-width: 480px) {
+  .footer-logo {
+    width: 120px;
+  }
+
+  .social-icons a {
+    font-size: 20px;
+    margin: 0 6px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .footer-logo {
+    width: 120px;
+  }
+
+  .social-icons a {
+    font-size: 20px;
+    margin: 0 6px;
+  }
+}
+.pentagon {
+  width: 120px;
+  height: 120px;
+  background: #FF6565;
+  position: relative;
+  margin: 0 auto;
+  clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.result p:first-of-type {
+  margin-top: 10px;
+}
+.pentagon:hover {
+  opacity: 0.9;
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
